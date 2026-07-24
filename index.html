@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unknown Wax — Sello, ropa y fiestas</title>
+  <meta name="description" content="Unknown Wax. Sello de house y minimal en Ecuador. Camisetas Represent de edición limitada. Reserva por Instagram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@500;600&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css?v=3">
+  <link rel="stylesheet" href="css/layout.css?v=3">
+  <link rel="stylesheet" href="css/components.css?v=3">
+</head>
+<body>
+
+<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+
+<a class="skip-link" href="#tienda">Ir al catálogo</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#inicio" class="brand-mark" aria-label="Unknown Wax, inicio">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Z" stroke="#EDE7DA" stroke-width="2"/>
+        <path d="M6 16c4-6 16-6 20 0" stroke="#7A2E1D" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M6 16c4 6 16 6 20 0" stroke="#7A2E1D" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="16" y="14" text-anchor="middle" fill="#F1EEE6" font-family="Arial Black,sans-serif" font-size="7" font-weight="900">U</text>
+        <text x="16" y="21" text-anchor="middle" fill="#F1EEE6" font-family="Arial Black,sans-serif" font-size="7" font-weight="900">W</text>
+      </svg>
+      UNKNOWN WAX
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#tienda">Catálogo</a>
+      <a href="#sello">Sello</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-toggle" id="cart-toggle" type="button" aria-haspopup="dialog" aria-controls="cart-drawer" aria-expanded="false" aria-label="Abrir reservas">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 6h18l-1.6 10.4a2 2 0 0 1-2 1.6H6.6a2 2 0 0 1-2-1.6L3 6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M8 6V5a4 4 0 0 1 8 0v1" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow mono">UW—001 · REPRESENT · RESERVA ABIERTA</p>
+      <h1 class="hero-title">
+        <span>SONIDO</span>
+        <span>SIN</span>
+        <span class="accent">etiqueta</span>
+      </h1>
+      <p class="hero-copy">
+        Unknown Wax es un sello independiente de house y minimal en Ecuador.
+        Prensamos sesiones, cortamos camisetas y montamos fiestas para quienes
+        escuchan de madrugada.
+      </p>
+      <div class="hero-actions">
+        <a href="#tienda" class="btn btn-primary">Reservar camiseta</a>
+        <a href="#eventos" class="btn btn-ghost">Próximas fiestas</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="turntable" id="turntable">
+        <div class="record" id="record">
+          <svg viewBox="0 0 320 320" width="100%" height="100%">
+            <circle cx="160" cy="160" r="158" fill="#111113"/>
+            <circle cx="160" cy="160" r="150" fill="none" stroke="#232326" stroke-width="1"/>
+            <circle cx="160" cy="160" r="132" fill="none" stroke="#232326" stroke-width="1"/>
+            <circle cx="160" cy="160" r="114" fill="none" stroke="#232326" stroke-width="1"/>
+            <circle cx="160" cy="160" r="96" fill="none" stroke="#232326" stroke-width="1"/>
+            <circle cx="160" cy="160" r="78" fill="none" stroke="#232326" stroke-width="1"/>
+            <circle cx="160" cy="160" r="60" fill="#EDE7DA"/>
+            <circle cx="160" cy="160" r="60" fill="none" stroke="#7A2E1D" stroke-width="2"/>
+            <text x="160" y="152" text-anchor="middle" class="label-text-main">UNKNOWN</text>
+            <text x="160" y="170" text-anchor="middle" class="label-text-main">WAX</text>
+            <text x="160" y="186" text-anchor="middle" class="label-text-sub">33⅓ RPM</text>
+            <circle cx="160" cy="160" r="4" fill="#0C0C0D"/>
+          </svg>
+        </div>
+        <svg class="tonearm" id="tonearm" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="172" cy="28" r="14" fill="#232326" stroke="#3a3a3d" stroke-width="1"/>
+          <line x1="172" y1="28" x2="70" y2="118" stroke="#3a3a3d" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="70" cy="118" r="5" fill="#7A2E1D"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="sello" id="sello">
+    <div class="sello-grid">
+      <div>
+        <p class="eyebrow mono">EL SELLO</p>
+        <h2>Minimal en la pista,<br>preciso en la prenda</h2>
+        <p class="sello-copy">
+          Cada pieza lleva número de catálogo como un lanzamiento más.
+          Represent es el primer corte: tipografía doble al frente, monograma
+          bordado atrás. Más diseños y colores en camino.
+        </p>
+      </div>
+      <ul class="stats">
+        <li>
+          <span class="stat-value">House</span>
+          <span class="stat-label">Minimal · sesiones nocturnas</span>
+        </li>
+        <li>
+          <span class="stat-value">$15</span>
+          <span class="stat-label">Precio de reserva · tiraje limitado</span>
+        </li>
+        <li>
+          <span class="stat-value">S–3XL</span>
+          <span class="stat-label">Tallas inclusivas en cada modelo</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="tienda" id="tienda">
+    <div class="section-head">
+      <p class="eyebrow mono">CATÁLOGO ACTUAL</p>
+      <h2>Camisetas de tiraje limitado</h2>
+      <p class="section-copy">
+        Elige color y talla, añade a tu reserva y confirma por Instagram.
+        Cuando tengas fotos nuevas, súbelas a <code class="mono">assets/products/</code>
+        y edita <code class="mono">js/data.js</code>.
+      </p>
+    </div>
+
+    <p class="catalog-note">→ Para añadir modelos: copia un producto en js/data.js y cambia las rutas de imagen.</p>
+
+    <div class="product-grid" id="product-grid"></div>
+  </section>
+
+  <section class="eventos" id="eventos">
+    <div class="section-head">
+      <p class="eyebrow mono">AGENDA</p>
+      <h2>Próximas fiestas</h2>
+      <p class="section-copy">House y minimal en vivo. Cupo limitado; la dirección se confirma por Instagram.</p>
+    </div>
+    <ul class="event-list" id="event-list"></ul>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contacto">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg viewBox="0 0 32 32" width="24" height="24" fill="none" aria-hidden="true">
+        <circle cx="16" cy="16" r="11" stroke="#EDE7DA" stroke-width="1.5"/>
+        <circle cx="16" cy="16" r="2" fill="#7A2E1D"/>
+      </svg>
+      <p class="mono footer-catalog">UW—∞</p>
+    </div>
+    <div class="footer-contact">
+      <p>Reservas, prensa y colaboraciones:</p>
+      <a href="https://www.instagram.com/unknown_wax/" target="_blank" rel="noopener noreferrer">@unknown_wax</a>
+    </div>
+    <p class="runout mono">grabado en manta, ecuador — sin muescas, sin prisa</p>
+  </div>
+</footer>
+
+<div class="cart-backdrop" id="cart-backdrop"></div>
+
+<aside class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Tus reservas" aria-hidden="true">
+  <div class="cart-header">
+    <h3>Tus reservas</h3>
+    <button class="cart-close" id="cart-close" type="button" aria-label="Cerrar">&times;</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total estimado</span>
+      <span id="cart-total">$0</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="confirm-btn" type="button">Confirmar por Instagram</button>
+    <p class="cart-note" id="cart-note">Copiamos tu pedido al portapapeles y abrimos @unknown_wax para que pegues el mensaje.</p>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="module" src="js/main.js?v=3"></script>
+</body>
+</html>

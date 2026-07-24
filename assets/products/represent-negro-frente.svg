@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Camiseta Represent negra, vista frontal">
+  <defs>
+    <linearGradient id="fabric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1c"/>
+      <stop offset="50%" stop-color="#0e0e10"/>
+      <stop offset="100%" stop-color="#161618"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <rect width="800" height="800" fill="#0C0C0D"/>
+  <g filter="url(#softShadow)">
+    <path fill="url(#fabric)" d="M260 120c0-18 14-32 32-32h216c18 0 32 14 32 32v44l88 36-28 88-60-24v312c0 22-18 40-40 40H300c-22 0-40-18-40-40V264l-60 24-28-88 88-36v-44z"/>
+    <ellipse cx="400" cy="118" rx="92" ry="18" fill="#121214"/>
+  </g>
+  <g transform="translate(318 290)">
+    <text x="0" y="0" fill="#F1EEE6" font-family="Arial Black, sans-serif" font-size="28" font-weight="900" letter-spacing="2">REPRESENT</text>
+    <text x="2" y="34" fill="#F1EEE6" font-family="Georgia, serif" font-size="22" font-style="italic">Unknown Wax</text>
+  </g>
+</svg>
