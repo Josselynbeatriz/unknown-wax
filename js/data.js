@@ -23,15 +23,15 @@ export const PRODUCTS = [
     status: 'reserva',
     badge: 'Reserva · Prototipo',
     description:
-      'Pecho con REPRESENT + Unknown Wax. Monograma UW bordado en espalda. Algodón premium, tiraje limitado.',
+      'Frente con Unknown Wax en pecho. Espalda con monograma UW. Algodón premium, tiraje limitado.',
     colors: [
       { name: 'Negro', available: true, images: {
-        front: 'assets/products/represent-negro-frente.svg',
-        back: 'assets/products/represent-negro-espalda.svg',
+        front: 'assets/products/represent-negro-frente.png',
+        back: 'assets/products/represent-negro-espalda.png',
       }},
       { name: 'Blanco', available: false, images: {
-        front: 'assets/products/represent-negro-frente.svg',
-        back: 'assets/products/represent-negro-espalda.svg',
+        front: 'assets/products/represent-negro-frente.png',
+        back: 'assets/products/represent-negro-espalda.png',
       }},
     ],
   },
