@@ -1,0 +1,288 @@
+/* Portafolio — Josselyn González */
+
+.portfolio-body {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(122, 46, 29, 0.18), transparent),
+    var(--bg);
+}
+
+.portfolio-header .brand-mark {
+  font-size: 0.82rem;
+}
+
+.portfolio-header .brand-sub {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.portfolio-hero {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 5.5rem) 1.5rem clamp(3rem, 6vw, 4rem);
+  min-height: auto;
+}
+
+.portfolio-hero .hero-title {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.portfolio-hero .hero-title .accent {
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+}
+
+.portfolio-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.75rem 0 2rem;
+}
+
+.meta-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--line);
+  color: var(--text-muted);
+  padding: 0.45rem 0.75rem;
+  background: rgba(23, 23, 26, 0.6);
+}
+
+.meta-pill.is-accent {
+  border-color: var(--wax);
+  color: var(--paper);
+  background: rgba(122, 46, 29, 0.2);
+}
+
+.portfolio-section {
+  border-top: 1px solid var(--line);
+}
+
+.portfolio-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.portfolio-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  padding: 1.5rem;
+}
+
+.portfolio-panel h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 0 0 1rem;
+}
+
+.portfolio-panel p,
+.portfolio-panel li {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.portfolio-panel ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.portfolio-panel li + li {
+  margin-top: 0.5rem;
+}
+
+.stack-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.stack-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--line);
+  color: var(--silver);
+  background: var(--bg);
+}
+
+.process-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s ease;
+}
+
+.process-step.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.process-step:hover {
+  border-color: rgba(122, 46, 29, 0.45);
+}
+
+.step-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--wax-bright);
+  padding-top: 0.15rem;
+}
+
+.step-body h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+}
+
+.step-body p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.split-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.split-card {
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+}
+
+.split-card h3 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  margin: 0 0 0.85rem;
+  color: var(--paper);
+}
+
+.split-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.split-card li + li {
+  margin-top: 0.45rem;
+}
+
+.split-card.is-ai {
+  border-color: rgba(122, 46, 29, 0.55);
+  background: linear-gradient(180deg, rgba(122, 46, 29, 0.08), var(--bg-panel));
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.result-item {
+  padding: 1.25rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+  text-align: center;
+}
+
+.result-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+  color: var(--paper);
+}
+
+.result-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.contact-card {
+  display: block;
+  text-decoration: none;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+
+.contact-card:hover {
+  border-color: var(--wax);
+  transform: translateY(-2px);
+}
+
+.contact-card .label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.contact-card .value {
+  font-weight: 600;
+  color: var(--paper);
+  word-break: break-word;
+}
+
+.quote-block {
+  margin: 2rem 0 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--wax);
+  background: rgba(122, 46, 29, 0.08);
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  font-style: italic;
+}
+
+@media (max-width: 860px) {
+  .portfolio-grid-2,
+  .split-cards,
+  .results-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
