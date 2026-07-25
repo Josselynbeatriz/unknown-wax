@@ -25,6 +25,12 @@ export function renderProducts() {
   const grid = document.getElementById('product-grid');
   if (!grid) return;
 
+  if (PRODUCTS.length === 0) {
+    grid.innerHTML =
+      '<p class="catalog-empty">Nuevo catálogo en camino. Diseños y mockups se publican aquí pronto.</p>';
+    return;
+  }
+
   grid.innerHTML = PRODUCTS.map((p) => {
     const sel = getSelection(p.id);
     const color = getColor(p, sel.color);

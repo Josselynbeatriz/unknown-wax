@@ -15,26 +15,7 @@ export const SITE = {
 };
 
 export const PRODUCTS = [
-  {
-    id: 'uw001',
-    catalog: 'UW—001',
-    name: 'Represent',
-    price: 15,
-    status: 'reserva',
-    badge: 'Reserva · Prototipo',
-    description:
-      'Frente con Unknown Wax en pecho. Espalda con monograma UW. Algodón premium, tiraje limitado.',
-    colors: [
-      { name: 'Negro', available: true, images: {
-        front: 'assets/products/represent-negro-frente.png',
-        back: 'assets/products/represent-negro-espalda.png',
-      }},
-      { name: 'Blanco', available: false, images: {
-        front: 'assets/products/represent-negro-frente.png',
-        back: 'assets/products/represent-negro-espalda.png',
-      }},
-    ],
-  },
+  // Catálogo pausado — añade modelos cuando tengas mockups finales en assets/products/
 ];
 
 export const EVENTS = [
