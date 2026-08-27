@@ -125,14 +125,12 @@
   flex-direction: column;
 }
 
-.hero-title .accent {
-  font-family: var(--font-script);
-  font-weight: 400;
-  font-size: clamp(2.8rem, 7vw, 5rem);
-  color: var(--paper);
-  letter-spacing: 0.02em;
-  line-height: 0.9;
-  margin-top: 0.15em;
+.hero-title span {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
 }
 
 .hero-copy {
